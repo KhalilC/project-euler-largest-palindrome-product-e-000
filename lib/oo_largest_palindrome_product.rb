@@ -1,9 +1,9 @@
 # Implement your object-oriented solution here!
 
 class LargestPalindromeProduct
-  
+
   def palindrome?(result)
-  result == result.to_s.reverse.to_i
+    result == result.to_s.reverse.to_i
   end
 
   def answer
@@ -13,5 +13,5 @@ class LargestPalindromeProduct
        end.select {|results| palindrome?(results)}
     end.flatten.max
   end
-    
+
 end
